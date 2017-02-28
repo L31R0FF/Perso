@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
+    <url>
+        <loc>http://nidhogg.netii.net</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nidhogg.000webhostapp.com</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>http://nidhogg.netii.net/index.html</loc>
+        <priority>0.1</priority>
+    </url>
+
+    <url>
+        <loc>http://nidhogg.netii.net/telechargement.html</loc>
+        <priority>0.1</priority>
+    </url>
+
+    <url>
+        <loc>http://nidhogg.netii.net/contact.html</loc>
+        <priority>0.1</priority>
+    </url>
+
+    <url>
+        <loc>http://nidhogg.netii.net/news.html</loc>
+        <priority>0.1</priority>
+    </url>
+
+    <url>
+        <loc>https://nidhogg.000webhostapp.com/index.html</loc>
+        <priority>0.1</priority>
+    </url>
+
+    <url>
+        <loc>https://nidhogg.000webhostapp.com/telechargement.html</loc>
+        <priority>0.1</priority>
+    </url>
+
+    <url>
+        <loc>https://nidhogg.000webhostapp.com/contact.html</loc>
+        <priority>0.1</priority>
+    </url>
+
+    <url>
+        <loc>https://nidhogg.000webhostapp.com/news.html</loc>
+        <priority>0.1</priority>
+    </url>
+</urlset>

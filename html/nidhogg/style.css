@@ -1,0 +1,110 @@
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: #5c965c;
+}
+
+#haut
+{
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+}
+h1
+{
+    margin-left: 15px;
+}
+#logo
+{
+    width: 50;
+    height: 60;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+nav li
+{
+
+    margin-right: 15px;
+
+}
+article p
+{
+    background-color: white;
+    border: 3px green ridge;
+    border-radius: 10px;
+}
+article p span
+{
+    text-decoration: underline;
+}
+a
+{
+    color: black;
+    text-decoration: underline;
+}
+a:hover
+{
+    color: #8ae28a;
+}
+
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        font-size: x-large;
+        font-family: Arial, sans-serif;
+        background-color: #5c965c;
+    }
+
+    #haut
+    {
+        background: url('images/separateur.png') repeat-x bottom;
+        display: flex;
+    }
+    h1
+    {
+        margin-left: 15px;
+    }
+    #logo
+    {
+        display: none;
+        width: 25;
+        height: 30;
+    }
+
+    nav ul
+    {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+    nav li
+    {
+
+        margin-right: 15px;
+        margin-bottom: 30px;
+
+    }
+    article p
+    {
+        background-color: white;
+        border: 3px green ridge;
+        border-radius: 10px;
+    }
+    article p span
+    {
+        text-decoration: underline;
+    }
+    a
+    {
+        color: black;
+        text-decoration: underline;
+    }
+    a:hover
+    {
+        color: #8ae28a;
+    }
+}
