@@ -1,0 +1,696 @@
+##########################################################################
+#############{ Voici le manuel de la version 1.0 de Nidhogg }#############
+##########################################################################
+
+La syntaxe en majuscule
+#######################
+
+SINON SI elif 
+  condition elif
+
+SINON else 
+  condition else
+
+SI ECHOUE except 
+  except du bloc try
+
+SI if 
+  condition if
+
+ALORS : 
+  le ":", then en basic
+
+TANT QUE while 
+  boucle while
+
+POUR CHAQUE foreach 
+  boucle spécifique à un tableau (pour chaque élément du tableau faire ...)
+
+POUR for 
+  boucle for (pour chaque ... dans ... faire ...) 
+
+DANS in 
+  in, s'utilise avec for (for ... in ...)
+
+CASSER break 
+  sert à sortir d'une boucle
+
+CONTINUER continue 
+  fait reboucler la boucle
+
+TOUT EST VRAI all 
+  savoir si chaque élément d'une liste est vrai (renvoie True si vrai) 
+
+EST VRAI PARMI any 
+  savoir si un élément d'une liste est vrai (renvoie True)
+
+VRAI True 
+  booléen Vrai
+
+FAUX False 
+  booléen Faux
+
+ECRIRE print 
+  affiche du texte à l'écran
+
+ENTRER UNE CHAINE raw_input 
+  demande une saise à l'utilisateur qui sera convertie en chaîne de caractères
+
+ENTRER input 
+  demande une saisie à l'utilisateur
+
+NOMBRE ALEATOIRE randint 
+  donne un nombre aléatoire, s'utilise avec le module random
+
+NOMBRE int 
+  type nombre
+
+DECIMALE float 
+  type décimale
+
+CHAINE str 
+  type chaîne de caractères
+
+EST EGAL A == 
+  opérateur égal
+
+EST INFERIEUR OU EGAL A <= 
+  opérateur inférieur ou égal
+
+EST SUPERIEUR OU EGAL A >= 
+  opérateur supérieur ou égal 
+
+EST DIFFERENT DE != 
+  opérateur différent
+
+EST INFERIEUR A < 
+  opérateur inférieur
+
+EST SUPERIEUR A > 
+  opérateur supérieur
+
+EGAL = 
+  égal, s'utilise lors d'un calcul
+
+PLUS + 
+  plus, s'utilise lors d'un calcul (a = 2+3)
+
+MOINS - 
+  moins, idem
+
+PUISSANCE ** 
+  puissance, idem
+
+DIVISE AVEC ENTIER PAR \ \  
+  diviser en récupérant un entier, idem
+
+MULTIPLIE PAR * 
+  multiplier, idem
+
+DIVISE PAR \  
+  diviser, idem
+
+DIVISE AVEC RESTE PAR % 
+  diviser en récupérant le reste, idem
+
+LONGUEUR len 
+  retourne la longueur d'une chaîne de caractères ou d'une liste
+
+SUPPRIMER del 
+  supprime un élément d'une liste
+
+AJOUTER append 
+  ajoute un élément à une liste
+
+TRIER LA LISTE sorted 
+  trie une liste en créant une nouvelle liste 
+
+TRIER sort 
+  trie une liste par ordre alphabétique ou numérique
+
+LISTE INVERSEE reversed 
+  inverse une liste en en créat une autre
+
+INVERSER reverse 
+  inverse les éléments d'une liste
+
+INDICE index 
+  trouve l'indice d'un élément d'une liste
+
+ENLEVER remove 
+  enlève un élément d'une liste
+
+GAMME range 
+  donne une liste préremplie d'éléments
+
+DEPUIS from 
+  sert à un importer un élément d'un module, s'utilise avec import (from ... import ...)
+
+IMPORTER import 
+  sert à importer un élément d'un module, s'utilise avec from (idem)
+
+DEFINITION def 
+  sert à définir une fonction (def ...( ... ) { ... })
+
+RENVOYER return 
+  définit la valeur renvoyée par une fonction
+
+GLOBALE global 
+  définit une variable globale au programme, réutilisable en dehors d'une fonction
+
+OUVRIR open 
+  ouvre un fichier ( open("nom_du_fichier", "mode") )
+
+INSCRIRE write 
+  écrit une ligne à l'intérieur d'un fichier
+
+LIRE UNE LIGNE readline 
+  lit une ligne d'un fichier
+
+LIRE read 
+  lit tout un fichier
+
+FERMER close 
+  ferme un fichier
+
+TYPE type 
+  renvoie le type d'une variable
+
+MELANGER LA LISTE zip 
+  regroupe sous la forme d'un tuple les items d'une liste
+
+ADDITIONNER LA LISTE sum 
+  additionne les valeurs d'un élément itérable 
+
+LISTE list 
+  type liste
+
+COMPTER LES OCCURENCES I count 
+  compte le nombre d'occurences d'une recherche dans une chaîne
+
+COMPTER LES OCCURENCES II count 
+  compte le nombre d'occurences d'une recherche dans une liste
+
+ENUMERER enumerate 
+  énumère les différents éléments d'une liste, est un itérateur 
+
+RECUPERER get ;  retourne la valeur d'une clé donnée, s'utilise sur un dictionnaire
+
+COPIER copy 
+  copie un dictionnaire, dans un ordre différent
+
+ABSOLUE abs 
+  retourne la valeur absolue d'un nombre
+
+BINAIRE bin 
+  convertit un nombre entier en chaîne de caractères binaires
+
+EST APPELLABLE callable 
+  détermine si on peu appeller un objet, retourne True si vérifié
+
+CAPITALISER capitalize 
+  formate une chaîne de caractère avec le format Xxxxx
+
+CHOIX choice 
+  retourne aléatoirement une des valeurs d'une liste
+
+NOM DES STRUCTURES dir 
+  retourne les noms de la structure d'un objet
+
+SE TERMINE PAR endswith 
+  teste si une chaîne de caractère se termine par la chaîne demandée, retourne True si vérifié
+
+CALCULER eval 
+  calcule une chaîne de caractères (eval("2+2") retourne 4)
+
+TROUVER find 
+  donne la place de la première occurence de la chaîne demandée
+
+AIDER help 
+  retourne des informations sur un élément demandé
+
+HEXADECIMAL hex 
+  convertit un nombre en hexadécimal
+
+EST ALPHANUMERIQUE isalnum 
+  vérifie que tous les caractères d'une chaîne sont alphanumériques, renvoie True si vérifié
+
+EST CARACTERIELLE isalpha 
+  vérifie que tous les caractrèes d'une chaîne sont des lettres, idem
+
+EST CHIFFREE isdigit 
+  vérifie que tous les caractères d'une chaîne sont des chiffres, idem
+
+EST MINUSCULE islower 
+  vérifie que tous les caractères d'une chaîne sont en minuscule, idem 
+
+EST ESPACEE isspace 
+  vérifie que la chaîne contient au moins un espace
+
+EST UN TITRE istitle 
+  vérifie que la chaîne à un format titre, c'est à dire Xxxxx Xx Xxx Xxxx 
+
+TITRER title 
+  formate une chaîne au format titre, idem
+
+EST MAJUSCULE isupper 
+  vérifie que tous les caractères d'une chaîne sont en majuscules 
+
+JOINDRE join 
+  transforme une liste en chaîne de caractères ("mon_séparateur".join(ma_liste))
+
+LOCALES locals 
+  retourne un dictionnaire avec les valeurs des variables en cours 
+
+MINUSCULISER lower 
+  met en minuscules une chaîne de caractères
+
+FAIRE map 
+  execute une fonction sur chaque item d'une liste
+
+MAXIMUM max 
+  retourne la valeur la plus élevée d'une liste 
+
+MINIMUM min 
+  retourne la valeur la plus basse d'une liste
+
+ALEATOIRE random 
+  retourne une valeur aléatoire
+
+REMPLACER replace 
+  remplace un segment d'une chaîne de caractères par une autre
+
+ARRONDIR round 
+  arrondi un nombre par le bas
+
+MELANGER shuffle 
+  mélange aléatoirement une liste
+
+COMMENCER PAR startswith 
+  vérifie qu'une chaîne de caractères commence par un préfixe indiqué
+
+SEPARER LES LIGNES splitlines 
+  retourne une liste des lignes d'une chaîne
+
+SEPARER split 
+  transforme une chaîne de caractères en liste ("ma_chaîne".split("mon_séparateur"))
+
+MAJUSCULISER upper 
+  met en majuscules une chaîne de caractères
+
+ET and 
+  vérifie qu'une condition ET une autre soient vérifiées
+
+OU or 
+  vérifie qu'une condition OU une autre soient vérifiées
+
+PAS not 
+  vérifie qu'une condition n'est pas vérifiée
+
+ESSAYER try 
+  essaye un bout de code
+
+FINALEMENT finally 
+  execute les instructions quelque soient les erreurs du bloc try
+
+CLASSE class 
+  regroupe les attributs et les fonctions qui définissent un objet
+
+ELLE-MEME self 
+  indique qu'il s'agit d'un attribut d'un objet
+
+INITIALISER __init__ 
+  initialise un objet
+
+NOUVEAU __new__ 
+  construit un objet
+
+OBJET object 
+  type objet
+
+DICTIONNAIRE __dict__ 
+  donne les valeurs de l'attribut d'instance
+
+DONNER yield 
+  retourne une valeur sans la fin de la fonction
+
+AVEC with 
+  execute du code avant et après un autre code
+
+COMME as 
+  permet de récupérer une valeur dun with (with ... as ... : ...)
+
+N'EST PAS is not 
+  opérateur différent 
+
+EST is 
+  opérateur égal
+
+
+La syntaxe en minuscule
+#######################
+
+sinon si elif 
+  condition elif
+
+sinon else 
+  condition else
+
+si échoue except 
+  except du bloc try
+
+si if 
+  condition if
+
+alors : 
+  le ":", then en basic
+
+tant que while 
+  boucle while
+
+pour chaque foreach 
+  boucle spécifique à un tableau (pour chaque élément du tableau faire ...)
+
+pour for 
+  boucle for (pour chaque ... dans ... faire ...) 
+
+dans in 
+  in, s'utilise avec for (for ... in ...)
+
+casser break 
+  sert à sortir d'une boucle
+
+continuer continue 
+  fait reboucler la boucle
+
+tout est vrai all 
+  savoir si chaque élément d'une liste est vrai (renvoie true si vrai) 
+
+est vrai parmi any 
+  savoir si un élément d'une liste est vrai (renvoie true)
+
+vrai true 
+  booléen vrai
+
+faux false 
+  booléen faux
+
+écrire print 
+  affiche du texte à l'écran
+
+entrer une chaîne raw_input 
+  demande une saise à l'utilisateur qui sera convertie en chaîne de caractères
+
+entrer input 
+  demande une saisie à l'utilisateur
+
+nombre aléatoire randint 
+  donne un nombre aléatoire, s'utilise avec le module random
+
+nombre int 
+  type nombre
+
+décimale float 
+  type décimale
+
+chaîne str 
+  type chaîne de caractères
+
+est égal à == 
+  opérateur égal
+
+est inférieur ou égal à <= 
+  opérateur inférieur ou égal
+
+est supérieur ou égal à >= 
+  opérateur supérieur ou égal 
+
+est différent de != 
+  opérateur différent
+
+est inférieur à < 
+  opérateur inférieur
+
+est supérieur à > 
+  opérateur supérieur
+
+égal = 
+  égal, s'utilise lors d'un calcul
+
+plus + 
+  plus, s'utilise lors d'un calcul (a = 2+3)
+
+moins - 
+  moins, idem
+
+puissance ** 
+  puissance, idem
+
+divisé avec entier par \ \  
+  diviser en récupérant un entier, idem
+
+multiplié par * 
+  multiplier, idem
+
+divisé par \  
+  diviser, idem
+
+divisé avec reste par % 
+  diviser en récupérant le reste, idem
+
+longueur len 
+  retourne la longueur d'une chaîne de caractères ou d'une liste
+
+supprimer del 
+  supprime un élément d'une liste
+
+ajouter append 
+  ajoute un élément à une liste
+
+trier la liste sorted 
+  trie une liste en créant une nouvelle liste 
+
+trier sort 
+  trie une liste par ordre alphabétique ou numérique
+
+liste inversee reversed 
+  inverse une liste en en créat une autre
+
+inverser reverse 
+  inverse les éléments d'une liste
+
+indice index 
+  trouve l'indice d'un élément d'une liste
+
+enlever remove 
+  enlève un élément d'une liste
+
+gamme range 
+  donne une liste préremplie d'éléments
+
+depuis from 
+  sert à un importer un élément d'un module, s'utilise avec import (from ... import ...)
+
+importer import 
+  sert à importer un élément d'un module, s'utilise avec from (idem)
+
+définition def 
+  sert à définir une fonction (def ...( ... ) { ... })
+
+renvoyer return 
+  définit la valeur renvoyée par une fonction
+
+globale global 
+  définit une variable globale au programme, réutilisable en dehors d'une fonction
+
+ouvrir open 
+  ouvre un fichier ( open("nom_du_fichier", "mode") )
+
+inscrire write 
+  écrit une ligne à l'intérieur d'un fichier
+
+lire une ligne readline 
+  lit une ligne d'un fichier
+
+lire read 
+  lit tout un fichier
+
+fermer close 
+  ferme un fichier
+
+type type 
+  renvoie le type d'une variable
+
+mélanger la liste zip 
+  regroupe sous la forme d'un tuple les items d'une liste
+
+additionner la liste sum 
+  additionne les valeurs d'un élément itérable 
+
+liste list 
+  type liste
+
+compter les occurences I count 
+  compte le nombre d'occurences d'une recherche dans une chaîne
+
+compter les occurences II count 
+  compte le nombre d'occurences d'une recherche dans une liste
+
+énumérer enumerate 
+  énumère les différents éléments d'une liste, est un itérateur 
+
+récupérer get ;  retourne la valeur d'une clé donnée, s'utilise sur un dictionnaire
+
+copier copy 
+  copie un dictionnaire, dans un ordre différent
+
+absolue abs 
+  retourne la valeur absolue d'un nombre
+
+binaire bin 
+  convertit un nombre entier en chaîne de caractères binaires
+
+est appellable callable 
+  détermine si on peu appeller un objet, retourne true si vérifié
+
+capitaliser capitalize 
+  formate une chaîne de caractère avec le format xxxxx
+
+choix choice 
+  retourne aléatoirement une des valeurs d'une liste
+
+nom des structures dir 
+  retourne les noms de la structure d'un objet
+
+se termine par endswith 
+  teste si une chaîne de caractère se termine par la chaîne demandée, retourne true si vérifié
+
+calculer eval 
+  calcule une chaîne de caractères (eval("2+2") retourne 4)
+
+trouver find 
+  donne la place de la première occurence de la chaîne demandée
+
+aider help 
+  retourne des informations sur un élément demandé
+
+hexadécimal hex 
+  convertit un nombre en hexadécimal
+
+est alphanumérique isalnum 
+  vérifie que tous les caractères d'une chaîne sont alphanumériques, renvoie true si vérifié
+
+est caractérielle isalpha 
+  vérifie que tous les caractrèes d'une chaîne sont des lettres, idem
+
+est chiffrée isdigit 
+  vérifie que tous les caractères d'une chaîne sont des chiffres, idem
+
+est minuscule islower 
+  vérifie que tous les caractères d'une chaîne sont en minuscule, idem 
+
+est espacée isspace 
+  vérifie que la chaîne contient au moins un espace
+
+est un titre istitle 
+  vérifie que la chaîne à un format titre, c'est à dire xxxxx xx xxx xxxx 
+
+titrer title 
+  formate une chaîne au format titre, idem
+
+est majuscule isupper 
+  vérifie que tous les caractères d'une chaîne sont en majuscules 
+
+joindre join 
+  transforme une liste en chaîne de caractères ("mon_séparateur".join(ma_liste))
+
+locales locals 
+  retourne un dictionnaire avec les valeurs des variables en cours 
+
+minusculiser lower 
+  met en minuscules une chaîne de caractères
+
+faire map 
+  execute une fonction sur chaque item d'une liste
+
+maximum max 
+  retourne la valeur la plus élevée d'une liste 
+
+minimum min 
+  retourne la valeur la plus basse d'une liste
+
+aléatoire random 
+  retourne une valeur aléatoire
+
+remplacer replace 
+  remplace un segment d'une chaîne de caractères par une autre
+
+arrondir round 
+  arrondi un nombre par le bas
+
+mélanger shuffle 
+  mélange aléatoirement une liste
+
+commence par startswith 
+  vérifie qu'une chaîne de caractères commence par un préfixe indiqué
+
+séparer les lignes splitlines 
+  retourne une liste des lignes d'une chaîne
+
+séparer split 
+  transforme une chaîne de caractères en liste ("ma_chaîne".split("mon_séparateur"))
+
+majusculiser upper 
+  met en majuscules une chaîne de caractères
+
+et and 
+  vérifie qu'une condition et une autre soient vérifiées
+
+ou or 
+  vérifie qu'une condition ou une autre soient vérifiées
+
+pas not 
+  vérifie qu'une condition n'est pas vérifiée
+
+essayer try 
+  essaye un bout de code
+
+finalement finally 
+  execute les instructions quelque soient les erreurs du bloc try
+
+classe class 
+  regroupe les attributs et les fonctions qui définissent un objet
+
+elle-même self 
+  indique qu'il s'agit d'un attribut d'un objet
+
+initialiser __init__ 
+  initialise un objet
+
+nouveau __new__ 
+  construit un objet
+
+objet object 
+  type objet
+
+dictionnaire __dict__ 
+  donne les valeurs de l'attribut d'instance
+
+donner yield 
+  retourne une valeur sans la fin de la fonction
+
+avec with 
+  execute du code avant et après un autre code
+
+comme as 
+  permet de récupérer une valeur dun with (with ... as ... : ...)
+
+n'est pas is not 
+  opérateur différent 
+
+est is 
+  opérateur égal
+
+##########################################################################
+######### Ce document à été écrit par Félix Foriel le 21/02/2017 #########
+##########################################################################

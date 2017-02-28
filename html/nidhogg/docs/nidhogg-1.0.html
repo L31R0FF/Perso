@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>Nidhogg 1.0, le manuel</title>
+</head>
+
+<body>
+<h1>Nidhogg 1.0, le manuel</h1>
+
+<h2>La syntaxe en majuscule</h2>
+
+<h3>SINON SI elif </h2>
+  condition elif
+
+<h3>SINON else </h2>
+  condition else
+
+<h3>SI ECHOUE except </h2>
+  except du bloc try
+
+<h3>SI if </h2>
+  condition if
+
+<h3>ALORS : </h2>
+  le ":", then en basic
+
+<h3>TANT QUE while </h2>
+  boucle while
+
+<h3>POUR CHAQUE foreach </h2>
+  boucle spécifique à un tableau (pour chaque élément du tableau faire ...)
+
+<h3>POUR for </h2>
+  boucle for (pour chaque ... dans ... faire ...) 
+
+<h3>DANS in </h2>
+  in, s'utilise avec for (for ... in ...)
+
+<h3>CASSER break </h2>
+  sert à sortir d'une boucle
+
+<h3>CONTINUER continue </h2>
+  fait reboucler la boucle
+
+<h3>TOUT EST VRAI all </h2>
+  savoir si chaque élément d'une liste est vrai (renvoie True si vrai) 
+
+<h3>EST VRAI PARMI any </h2>
+  savoir si un élément d'une liste est vrai (renvoie True)
+
+<h3>VRAI True </h2>
+  booléen Vrai
+
+<h3>FAUX False </h2>
+  booléen Faux
+
+<h3>ECRIRE print </h2>
+  affiche du texte à l'écran
+
+<h3>ENTRER UNE CHAINE raw_input </h2>
+  demande une saise à l'utilisateur qui sera convertie en chaîne de caractères
+
+<h3>ENTRER input </h2>
+  demande une saisie à l'utilisateur
+
+<h3>NOMBRE ALEATOIRE randint </h2>
+  donne un nombre aléatoire, s'utilise avec le module random
+
+<h3>NOMBRE int </h2>
+  type nombre
+
+<h3>DECIMALE float </h2>
+  type décimale
+
+<h3>CHAINE str </h2>
+  type chaîne de caractères
+
+<h3>EST EGAL A == </h2>
+  opérateur égal
+
+<h3>EST INFERIEUR OU EGAL A <= </h2>
+  opérateur inférieur ou égal
+
+<h3>EST SUPERIEUR OU EGAL A >= </h2>
+  opérateur supérieur ou égal 
+
+<h3>EST DIFFERENT DE != </h2>
+  opérateur différent
+
+<h3>EST INFERIEUR A < </h2>
+  opérateur inférieur
+
+<h3>EST SUPERIEUR A > </h2>
+  opérateur supérieur
+
+<h3>EGAL = </h2>
+  égal, s'utilise lors d'un calcul
+
+<h3>PLUS + </h2>
+  plus, s'utilise lors d'un calcul (a = 2+3)
+
+<h3>MOINS - </h2>
+  moins, idem
+
+<h3>PUISSANCE ** </h2>
+  puissance, idem
+
+<h3>DIVISE AVEC ENTIER PAR \ \  </h2>
+  diviser en récupérant un entier, idem
+
+<h3>MULTIPLIE PAR * </h2>
+  multiplier, idem
+
+<h3>DIVISE PAR \  </h2>
+  diviser, idem
+
+<h3>DIVISE AVEC RESTE PAR % </h2>
+  diviser en récupérant le reste, idem
+
+<h3>LONGUEUR len </h2>
+  retourne la longueur d'une chaîne de caractères ou d'une liste
+
+<h3>SUPPRIMER del </h2>
+  supprime un élément d'une liste
+
+<h3>AJOUTER append </h2>
+  ajoute un élément à une liste
+
+<h3>TRIER LA LISTE sorted </h2>
+  trie une liste en créant une nouvelle liste 
+
+<h3>TRIER sort </h2>
+  trie une liste par ordre alphabétique ou numérique
+
+<h3>LISTE INVERSEE reversed </h2>
+  inverse une liste en en créat une autre
+
+<h3>INVERSER reverse </h2>
+  inverse les éléments d'une liste
+
+<h3>INDICE index </h2>
+  trouve l'indice d'un élément d'une liste
+
+<h3>ENLEVER remove </h2>
+  enlève un élément d'une liste
+
+<h3>GAMME range </h2>
+  donne une liste préremplie d'éléments
+
+<h3>DEPUIS from </h2>
+  sert à un importer un élément d'un module, s'utilise avec import (from ... import ...)
+
+<h3>IMPORTER import </h2>
+  sert à importer un élément d'un module, s'utilise avec from (idem)
+
+<h3>DEFINITION def </h2>
+  sert à définir une fonction (def ...( ... ) { ... })
+
+<h3>RENVOYER return </h2>
+  définit la valeur renvoyée par une fonction
+
+<h3>GLOBALE global </h2>
+  définit une variable globale au programme, réutilisable en dehors d'une fonction
+
+<h3>OUVRIR open </h2>
+  ouvre un fichier ( open("nom_du_fichier", "mode") )
+
+<h3>INSCRIRE write </h2>
+  écrit une ligne à l'intérieur d'un fichier
+
+<h3>LIRE UNE LIGNE readline </h2>
+  lit une ligne d'un fichier
+
+<h3>LIRE read </h2>
+  lit tout un fichier
+
+<h3>FERMER close </h2>
+  ferme un fichier
+
+<h3>TYPE type </h2>
+  renvoie le type d'une variable
+
+<h3>MELANGER LA LISTE zip </h2>
+  regroupe sous la forme d'un tuple les items d'une liste
+
+<h3>ADDITIONNER LA LISTE sum </h2>
+  additionne les valeurs d'un élément itérable 
+
+<h3>LISTE list </h2>
+  type liste
+
+<h3>COMPTER LES OCCURENCES I count </h2>
+  compte le nombre d'occurences d'une recherche dans une chaîne
+
+<h3>COMPTER LES OCCURENCES II count </h2>
+  compte le nombre d'occurences d'une recherche dans une liste
+
+<h3>ENUMERER enumerate </h2>
+  énumère les différents éléments d'une liste, est un itérateur 
+
+<h3>RECUPERER get ;  retourne la valeur d'une clé donnée, s'utilise sur un dictionnaire
+
+<h3>COPIER copy </h2>
+  copie un dictionnaire, dans un ordre différent
+
+<h3>ABSOLUE abs </h2>
+  retourne la valeur absolue d'un nombre
+
+<h3>BINAIRE bin </h2>
+  convertit un nombre entier en chaîne de caractères binaires
+
+<h3>EST APPELLABLE callable </h2>
+  détermine si on peu appeller un objet, retourne True si vérifié
+
+<h3>CAPITALISER capitalize </h2>
+  formate une chaîne de caractère avec le format Xxxxx
+
+<h3>CHOIX choice </h2>
+  retourne aléatoirement une des valeurs d'une liste
+
+<h3>NOM DES STRUCTURES dir </h2>
+  retourne les noms de la structure d'un objet
+
+<h3>SE TERMINE PAR endswith </h2>
+  teste si une chaîne de caractère se termine par la chaîne demandée, retourne True si vérifié
+
+<h3>CALCULER eval </h2>
+  calcule une chaîne de caractères (eval("2+2") retourne 4)
+
+<h3>TROUVER find </h2>
+  donne la place de la première occurence de la chaîne demandée
+
+<h3>AIDER help </h2>
+  retourne des informations sur un élément demandé
+
+<h3>HEXADECIMAL hex </h2>
+  convertit un nombre en hexadécimal
+
+<h3>EST ALPHANUMERIQUE isalnum </h2>
+  vérifie que tous les caractères d'une chaîne sont alphanumériques, renvoie True si vérifié
+
+<h3>EST CARACTERIELLE isalpha </h2>
+  vérifie que tous les caractrèes d'une chaîne sont des lettres, idem
+
+<h3>EST CHIFFREE isdigit </h2>
+  vérifie que tous les caractères d'une chaîne sont des chiffres, idem
+
+<h3>EST MINUSCULE islower </h2>
+  vérifie que tous les caractères d'une chaîne sont en minuscule, idem 
+
+<h3>EST ESPACEE isspace </h2>
+  vérifie que la chaîne contient au moins un espace
+
+<h3>EST UN TITRE istitle </h2>
+  vérifie que la chaîne à un format titre, c'est à dire Xxxxx Xx Xxx Xxxx 
+
+<h3>TITRER title </h2>
+  formate une chaîne au format titre, idem
+
+<h3>EST MAJUSCULE isupper </h2>
+  vérifie que tous les caractères d'une chaîne sont en majuscules 
+
+<h3>JOINDRE join </h2>
+  transforme une liste en chaîne de caractères ("mon_séparateur".join(ma_liste))
+
+<h3>LOCALES locals </h2>
+  retourne un dictionnaire avec les valeurs des variables en cours 
+
+<h3>MINUSCULISER lower </h2>
+  met en minuscules une chaîne de caractères
+
+<h3>FAIRE map </h2>
+  execute une fonction sur chaque item d'une liste
+
+<h3>MAXIMUM max </h2>
+  retourne la valeur la plus élevée d'une liste 
+
+<h3>MINIMUM min </h2>
+  retourne la valeur la plus basse d'une liste
+
+<h3>ALEATOIRE random </h2>
+  retourne une valeur aléatoire
+
+<h3>REMPLACER replace </h2>
+  remplace un segment d'une chaîne de caractères par une autre
+
+<h3>ARRONDIR round </h2>
+  arrondi un nombre par le bas
+
+<h3>MELANGER shuffle </h2>
+  mélange aléatoirement une liste
+
+<h3>COMMENCER PAR startswith </h2>
+  vérifie qu'une chaîne de caractères commence par un préfixe indiqué
+
+<h3>SEPARER LES LIGNES splitlines </h2>
+  retourne une liste des lignes d'une chaîne
+
+<h3>SEPARER split </h2>
+  transforme une chaîne de caractères en liste ("ma_chaîne".split("mon_séparateur"))
+
+<h3>MAJUSCULISER upper </h2>
+  met en majuscules une chaîne de caractères
+
+<h3>ET and </h2>
+  vérifie qu'une condition ET une autre soient vérifiées
+
+<h3>OU or </h2>
+  vérifie qu'une condition OU une autre soient vérifiées
+
+<h3>PAS not </h2>
+  vérifie qu'une condition n'est pas vérifiée
+
+<h3>ESSAYER try </h2>
+  essaye un bout de code
+
+<h3>FINALEMENT finally </h2>
+  execute les instructions quelque soient les erreurs du bloc try
+
+<h3>CLASSE class </h2>
+  regroupe les attributs et les fonctions qui définissent un objet
+
+<h3>ELLE-MEME self </h2>
+  indique qu'il s'agit d'un attribut d'un objet
+
+<h3>INITIALISER __init__ </h2>
+  initialise un objet
+
+<h3>NOUVEAU __new__ </h2>
+  construit un objet
+
+<h3>OBJET object </h2>
+  type objet
+
+<h3>DICTIONNAIRE __dict__ </h2>
+  donne les valeurs de l'attribut d'instance
+
+<h3>DONNER yield </h2>
+  retourne une valeur sans la fin de la fonction
+
+<h3>AVEC with </h2>
+  execute du code avant et après un autre code
+
+<h3>COMME as </h2>
+  permet de récupérer une valeur dun with (with ... as ... : ...)
+
+<h3>N'EST PAS is not </h2>
+  opérateur différent 
+
+<h3>EST is </h2>
+  opérateur égal
+
+<h2>La syntaxe en minuscule</h2>
+
+
+<h3>sinon si elif </h2>
+  condition elif
+
+<h3>sinon else </h2>
+  condition else
+
+<h3>si échoue except </h2>
+  except du bloc try
+
+<h3>si if </h2>
+  condition if
+
+<h3>alors : </h2>
+  le ":", then en basic
+
+<h3>tant que while </h2>
+  boucle while
+
+<h3>pour chaque foreach </h2>
+  boucle spécifique à un tableau (pour chaque élément du tableau faire ...)
+
+<h3>pour for </h2>
+  boucle for (pour chaque ... dans ... faire ...) 
+
+<h3>dans in </h2>
+  in, s'utilise avec for (for ... in ...)
+
+<h3>casser break </h2>
+  sert à sortir d'une boucle
+
+<h3>continuer continue </h2>
+  fait reboucler la boucle
+
+<h3>tout est vrai all </h2>
+  savoir si chaque élément d'une liste est vrai (renvoie true si vrai) 
+
+<h3>est vrai parmi any </h2>
+  savoir si un élément d'une liste est vrai (renvoie true)
+
+<h3>vrai true </h2>
+  booléen vrai
+
+<h3>faux false </h2>
+  booléen faux
+
+<h3>écrire print </h2>
+  affiche du texte à l'écran
+
+<h3>entrer une chaîne raw_input </h2>
+  demande une saise à l'utilisateur qui sera convertie en chaîne de caractères
+
+<h3>entrer input </h2>
+  demande une saisie à l'utilisateur
+
+<h3>nombre aléatoire randint </h2>
+  donne un nombre aléatoire, s'utilise avec le module random
+
+<h3>nombre int </h2>
+  type nombre
+
+<h3>décimale float </h2>
+  type décimale
+
+<h3>chaîne str </h2>
+  type chaîne de caractères
+
+<h3>est égal à == </h2>
+  opérateur égal
+
+<h3>est inférieur ou égal à <= </h2>
+  opérateur inférieur ou égal
+
+<h3>est supérieur ou égal à >= </h2>
+  opérateur supérieur ou égal 
+
+<h3>est différent de != </h2>
+  opérateur différent
+
+<h3>est inférieur à < </h2>
+  opérateur inférieur
+
+<h3>est supérieur à > </h2>
+  opérateur supérieur
+
+<h3>égal = </h2>
+  égal, s'utilise lors d'un calcul
+
+<h3>plus + </h2>
+  plus, s'utilise lors d'un calcul (a = 2+3)
+
+<h3>moins - </h2>
+  moins, idem
+
+<h3>puissance ** </h2>
+  puissance, idem
+
+<h3>divisé avec entier par \ \  </h2>
+  diviser en récupérant un entier, idem
+
+<h3>multiplié par * </h2>
+  multiplier, idem
+
+<h3>divisé par \  </h2>
+  diviser, idem
+
+<h3>divisé avec reste par % </h2>
+  diviser en récupérant le reste, idem
+
+<h3>longueur len </h2>
+  retourne la longueur d'une chaîne de caractères ou d'une liste
+
+<h3>supprimer del </h2>
+  supprime un élément d'une liste
+
+<h3>ajouter append </h2>
+  ajoute un élément à une liste
+
+<h3>trier la liste sorted </h2>
+  trie une liste en créant une nouvelle liste 
+
+<h3>trier sort </h2>
+  trie une liste par ordre alphabétique ou numérique
+
+<h3>liste inversee reversed </h2>
+  inverse une liste en en créat une autre
+
+<h3>inverser reverse </h2>
+  inverse les éléments d'une liste
+
+<h3>indice index </h2>
+  trouve l'indice d'un élément d'une liste
+
+<h3>enlever remove </h2>
+  enlève un élément d'une liste
+
+<h3>gamme range </h2>
+  donne une liste préremplie d'éléments
+
+<h3>depuis from </h2>
+  sert à un importer un élément d'un module, s'utilise avec import (from ... import ...)
+
+<h3>importer import </h2>
+  sert à importer un élément d'un module, s'utilise avec from (idem)
+
+<h3>définition def </h2>
+  sert à définir une fonction (def ...( ... ) { ... })
+
+<h3>renvoyer return </h2>
+  définit la valeur renvoyée par une fonction
+
+<h3>globale global </h2>
+  définit une variable globale au programme, réutilisable en dehors d'une fonction
+
+<h3>ouvrir open </h2>
+  ouvre un fichier ( open("nom_du_fichier", "mode") )
+
+<h3>inscrire write </h2>
+  écrit une ligne à l'intérieur d'un fichier
+
+<h3>lire une ligne readline </h2>
+  lit une ligne d'un fichier
+
+<h3>lire read </h2>
+  lit tout un fichier
+
+<h3>fermer close </h2>
+  ferme un fichier
+
+<h3>type type </h2>
+  renvoie le type d'une variable
+
+<h3>mélanger la liste zip </h2>
+  regroupe sous la forme d'un tuple les items d'une liste
+
+<h3>additionner la liste sum </h2>
+  additionne les valeurs d'un élément itérable 
+
+<h3>liste list </h2>
+  type liste
+
+<h3>compter les occurences I count </h2>
+  compte le nombre d'occurences d'une recherche dans une chaîne
+
+<h3>compter les occurences II count </h2>
+  compte le nombre d'occurences d'une recherche dans une liste
+
+<h3>énumérer enumerate </h2>
+  énumère les différents éléments d'une liste, est un itérateur 
+
+<h3>récupérer get ;  retourne la valeur d'une clé donnée, s'utilise sur un dictionnaire
+
+<h3>copier copy </h2>
+  copie un dictionnaire, dans un ordre différent
+
+<h3>absolue abs </h2>
+  retourne la valeur absolue d'un nombre
+
+<h3>binaire bin </h2>
+  convertit un nombre entier en chaîne de caractères binaires
+
+<h3>est appellable callable </h2>
+  détermine si on peu appeller un objet, retourne true si vérifié
+
+<h3>capitaliser capitalize </h2>
+  formate une chaîne de caractère avec le format xxxxx
+
+<h3>choix choice </h2>
+  retourne aléatoirement une des valeurs d'une liste
+
+<h3>nom des structures dir </h2>
+  retourne les noms de la structure d'un objet
+
+<h3>se termine par endswith </h2>
+  teste si une chaîne de caractère se termine par la chaîne demandée, retourne true si vérifié
+
+<h3>calculer eval </h2>
+  calcule une chaîne de caractères (eval("2+2") retourne 4)
+
+<h3>trouver find </h2>
+  donne la place de la première occurence de la chaîne demandée
+
+<h3>aider help </h2>
+  retourne des informations sur un élément demandé
+
+<h3>hexadécimal hex </h2>
+  convertit un nombre en hexadécimal
+
+<h3>est alphanumérique isalnum </h2>
+  vérifie que tous les caractères d'une chaîne sont alphanumériques, renvoie true si vérifié
+
+<h3>est caractérielle isalpha </h2>
+  vérifie que tous les caractrèes d'une chaîne sont des lettres, idem
+
+<h3>est chiffrée isdigit </h2>
+  vérifie que tous les caractères d'une chaîne sont des chiffres, idem
+
+<h3>est minuscule islower </h2>
+  vérifie que tous les caractères d'une chaîne sont en minuscule, idem 
+
+<h3>est espacée isspace </h2>
+  vérifie que la chaîne contient au moins un espace
+
+<h3>est un titre istitle </h2>
+  vérifie que la chaîne à un format titre, c'est à dire xxxxx xx xxx xxxx 
+
+<h3>titrer title </h2>
+  formate une chaîne au format titre, idem
+
+<h3>est majuscule isupper </h2>
+  vérifie que tous les caractères d'une chaîne sont en majuscules 
+
+<h3>joindre join </h2>
+  transforme une liste en chaîne de caractères ("mon_séparateur".join(ma_liste))
+
+<h3>locales locals </h2>
+  retourne un dictionnaire avec les valeurs des variables en cours 
+
+<h3>minusculiser lower </h2>
+  met en minuscules une chaîne de caractères
+
+<h3>faire map </h2>
+  execute une fonction sur chaque item d'une liste
+
+<h3>maximum max </h2>
+  retourne la valeur la plus élevée d'une liste 
+
+<h3>minimum min </h2>
+  retourne la valeur la plus basse d'une liste
+
+<h3>aléatoire random </h2>
+  retourne une valeur aléatoire
+
+<h3>remplacer replace </h2>
+  remplace un segment d'une chaîne de caractères par une autre
+
+<h3>arrondir round </h2>
+  arrondi un nombre par le bas
+
+<h3>mélanger shuffle </h2>
+  mélange aléatoirement une liste
+
+<h3>commence par startswith </h2>
+  vérifie qu'une chaîne de caractères commence par un préfixe indiqué
+
+<h3>séparer les lignes splitlines </h2>
+  retourne une liste des lignes d'une chaîne
+
+<h3>séparer split </h2>
+  transforme une chaîne de caractères en liste ("ma_chaîne".split("mon_séparateur"))
+
+<h3>majusculiser upper </h2>
+  met en majuscules une chaîne de caractères
+
+<h3>et and </h2>
+  vérifie qu'une condition et une autre soient vérifiées
+
+<h3>ou or </h2>
+  vérifie qu'une condition ou une autre soient vérifiées
+
+<h3>pas not </h2>
+  vérifie qu'une condition n'est pas vérifiée
+
+<h3>essayer try </h2>
+  essaye un bout de code
+
+<h3>finalement finally </h2>
+  execute les instructions quelque soient les erreurs du bloc try
+
+<h3>classe class </h2>
+  regroupe les attributs et les fonctions qui définissent un objet
+
+<h3>elle-même self </h2>
+  indique qu'il s'agit d'un attribut d'un objet
+
+<h3>initialiser __init__ </h2>
+  initialise un objet
+
+<h3>nouveau __new__ </h2>
+  construit un objet
+
+<h3>objet object </h2>
+  type objet
+
+<h3>dictionnaire __dict__ </h2>
+  donne les valeurs de l'attribut d'instance
+
+<h3>donner yield </h2>
+  retourne une valeur sans la fin de la fonction
+
+<h3>avec with </h2>
+  execute du code avant et après un autre code
+
+<h3>comme as </h2>
+  permet de récupérer une valeur dun with (with ... as ... : ...)
+
+<h3>n'est pas is not </h2>
+  opérateur différent 
+
+<h3>est is </h2>
+  opérateur égal
+print $fh2 $l;  écrit $l après l'avoir modifié
+}
+close($fh);  ferme le fichier source
+close($fh2);  ferme le fichier créé
