@@ -1,0 +1,59 @@
+#!/usr/bin/env python  
+# -*- coding: utf-8 -*-
+
+##############################################################################################################
+## This is the original code of the ForieL Advanced SHell (FLASH) 1.0 writed by Felix Foriel the 08/02/2017 ##
+##############################################################################################################
+
+# first, we import the modules
+import os
+import sys
+import time
+import re
+
+# we initalize cmd and we set the user mode to normal
+cmd = ""
+mode = "$ "
+
+# if the user is root, we set the mode to super user
+if os.environ["USER"] == "root" :
+    mode = "# "
+
+# if there is an argument on the starting of flash and this argument is "-v"
+if len(sys.argv) > 1 and sys.argv[1] == "-v" :
+    # we write the version
+    print("Votre version du shell flash est la version 1.0")
+    # we leave normaly
+    sys.exit(0)
+
+# main loop
+while cmd != "exit" :
+
+    # we puts the command prompt (user@localhost[path](date)mode($ or #))
+    cmd = raw_input(os.environ["USER"] + "@" + os.uname()[1] + "[" + os.getcwd() + "]" + "(" + time.strftime("%d/%m/%y %H:%M:%S") + ")" + mode)
+    # we split the arguments from cmd to scmd
+    scmd = cmd.split(" ")
+
+    # if cmd is "cd" alone
+    if cmd == "cd" :
+        # we leave our current directory to the user directory
+        os.chdir(os.environ["HOME"])
+
+    # if cmd is "cd" with an argument
+    elif scmd[0] == "cd" and scmd[1] :
+        # if this argument begin with "/" or is ".."
+        if re.match(r"^/{1}", scmd[1]) or scmd[1] == "..":
+            # we change our directory to the argument given to "cd"  
+            os.chdir(scmd[1])
+        # else, we take our current directory, we add a "/" and the argument given to "cd"
+        else :
+            os.chdir(os.getcwd() + "/" + scmd[1])
+
+    # if cmd is "ls" alone
+    elif cmd == "ls" :
+        # we execute "ls" with the current directory for argument
+        os.system("ls " + os.getcwd())
+    
+    # else, we execute the command
+    else :
+        os.system(cmd)

@@ -1,0 +1,59 @@
+#!/usr/bin/env python  
+# -*- coding: utf-8 -*-
+
+######################################################################################################
+## Voici le code original du ForieL Advanced SHell (FLASH) 1.0 écrit par Félix Foriel le 08/02/2017 ##
+######################################################################################################
+
+# on importe les bibliothèques
+import os
+import sys
+import time
+import re
+
+# on initialise cmd et on met le mode en simple utilisateur
+cmd = ""
+mode = "$ "
+
+# si l'utilisateur est root, on change le mode vers super-utilisateur
+if os.environ["USER"] == "root" :
+    mode = "# "
+
+# si il y a un argument lors du lancement de flash et que cet argument est "-v"
+if len(sys.argv) > 1 and sys.argv[1] == "-v" :
+    # écrire la version
+    print("Votre version du shell flash est la version 1.0")
+    # quitter normalement
+    sys.exit(0)
+
+# boucle principale
+while cmd != "exit" :
+
+    # on affiche l'invite de commande (user@localhost[chemin d'accès](date)mode($ ou #))
+    cmd = raw_input(os.environ["USER"] + "@" + os.uname()[1] + "[" + os.getcwd() + "]" + "(" + time.strftime("%d/%m/%y %H:%M:%S") + ")" + mode)
+    # on sépare les arguments de cmd dans scmd
+    scmd = cmd.split(" ")
+
+    # si cmd est égale à cd tout seul
+    if cmd == "cd" :
+        # on change le dossier au dossier de l'utilisateur
+        os.chdir(os.environ["HOME"])
+
+    # si cmd est égale à cd avc un argument
+    elif scmd[0] == "cd" and scmd[1] :
+        # si cet argument commence par / ou est ..
+        if re.match(r"^/{1}", scmd[1]) or scmd[1] == "..":
+            # on change de répertoire avec comme argument l'argument passé à cd  
+            os.chdir(scmd[1])
+        # sinon, on prend le répertoire où on est, on ajoute / et l'argument passé à cd
+        else :
+            os.chdir(os.getcwd() + "/" + scmd[1])
+
+    # si cmd est égale à ls tout seul
+    elif cmd == "ls" :
+        # on execute la commande ls avec comme argument le répertoire où l'on est
+        os.system("ls " + os.getcwd())
+    
+    # sinon, on execute la commande
+    else :
+        os.system(cmd)
