@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Exactement 118 680 possibilités 
+# Exactement 118 680 possibilites 
 
 import random
 
