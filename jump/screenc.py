@@ -109,7 +109,7 @@ while reponse != "5" :
                         print(Fore.GREEN + Back.GREEN + "a" + Style.RESET_ALL, end="")
 
                     else :
-                        print(lettre, end="")
+                        print(Back.YELLOW + lettre + Style.RESET_ALL, end="")
                 print() 
             while continuer :
                 evenement = input(": ")
@@ -153,7 +153,7 @@ while reponse != "5" :
                                         print(Fore.GREEN + Back.GREEN + "a" + Style.RESET_ALL, end="")
 
                                     else :
-                                        print(lettre, end="")
+                                        print(Back.YELLOW + lettre + Style.RESET_ALL, end="")
                                 print()
                             time.sleep(0.25)
                             i = i + 1
@@ -196,7 +196,7 @@ while reponse != "5" :
                                         print(Fore.GREEN + Back.GREEN + "a" + Style.RESET_ALL, end="")
 
                                     else :
-                                        print(lettre, end="")
+                                        print(Back.YELLOW + lettre + Style.RESET_ALL, end="")
                                 print()
                             time.sleep(0.25)
                             i = i + 1
@@ -238,7 +238,7 @@ while reponse != "5" :
                                         print(Fore.GREEN + Back.GREEN + "a" + Style.RESET_ALL, end="")
 
                                     else :
-                                        print(lettre, end="")
+                                        print(Back.YELLOW + lettre + Style.RESET_ALL, end="")
                                 print()
                             time.sleep(0.25)
                             i = i + 1
@@ -281,7 +281,7 @@ while reponse != "5" :
                                         print(Fore.GREEN + Back.GREEN + "a" + Style.RESET_ALL, end="")
 
                                     else :
-                                        print(lettre, end="")
+                                        print(Back.YELLOW + lettre + Style.RESET_ALL, end="")
                                 print()
                             time.sleep(0.25)
                             i = i + 1
@@ -323,7 +323,7 @@ while reponse != "5" :
                                         print(Fore.GREEN + Back.GREEN + "a" + Style.RESET_ALL, end="")
 
                                     else :
-                                        print(lettre, end="")
+                                        print(Back.YELLOW + lettre + Style.RESET_ALL, end="")
                                 print()
                             time.sleep(0.25)
                             i = i + 1
@@ -394,7 +394,7 @@ while reponse != "5" :
                                     print(Fore.GREEN + Back.GREEN + "a" + Style.RESET_ALL, end="")
 
                                 else :
-                                    print(lettre, end="")
+                                    print(Back.YELLOW + lettre + Style.RESET_ALL, end="")
                             print()
                         time.sleep(0.25)
             
@@ -417,7 +417,7 @@ while reponse != "5" :
                             print(Fore.GREEN + Back.GREEN + "a" + Style.RESET_ALL, end="")
 
                         else :
-                            print(lettre, end="")
+                            print(Back.YELLOW + lettre + Style.RESET_ALL, end="")
                     print()                    
         save = input("save (y/n) : ")
         if save == "y" :
