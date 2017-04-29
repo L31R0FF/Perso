@@ -20,7 +20,7 @@ void println(std::string text) {
 }
 
 std::string ask(std::string text) {
-    std::cout << text << std::endl;
+    std::cout << text;
     std::string reponse;
     std::cin >> reponse;
     return reponse;
@@ -80,4 +80,3 @@ std::string fread(std::string nom) {
     }
     return text;
 }
-

@@ -9,6 +9,7 @@
 #define simplecpp_h
 
 #include <string>
+#include <sstream>
 
 /**
 * \brief Fonction qui affiche un texte à l'écran
@@ -48,7 +49,21 @@ void fprintln(std::string nom, std::string mode, std::string text);
 /*
 * \brief Fonction qui lit un fichier entièrement
 * \param nom Le nom du fichier
+* \return text
 */
 std::string fread(std::string nom);
+
+/*
+* \brief Fonction qui convertit n'importe quel type en string
+* \param element L'element à convertir 
+* \return str
+*/
+template <typename T>
+std::string atos(T element) {
+    std::stringstream ss;
+    ss << element;
+    std::string str = ss.str();
+    return str;
+}
 
 #endif /* simplecpp_h */
