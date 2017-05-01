@@ -20,7 +20,7 @@ corn = pygame.image.load("pics/corn.png").convert()
 saveimg = pygame.image.load("pics/save.png").convert()
 
 pygame.display.set_icon(perso)
-pygame.display.set_caption("BUBBLE")
+pygame.display.set_caption("SPOOKY BOY")
 
 reponse = ""
 pygame.key.set_repeat(400, 100)
