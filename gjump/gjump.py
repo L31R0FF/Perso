@@ -19,6 +19,7 @@ credits = pygame.image.load("pics/credits.png").convert()
 corn = pygame.image.load("pics/corn.png").convert()
 saveimg = pygame.image.load("pics/save.png").convert()
 jstr = pygame.image.load("pics/jstrenght.png").convert()
+gagne = pygame.image.load("pics/gagne.png").convert()
 
 pygame.display.set_icon(perso)
 pygame.display.set_caption("SPOOKY BOY")
@@ -127,9 +128,20 @@ while reponse != "5" :
                     savefile.close()
         while game :
             if not os.path.isfile("level" + str(level) + ".txt") :
-                print("GAGNE !")
-                game = 0
-                break
+                
+                a = True
+                while a :
+                    fenetre.blit(gagne, (0, 0))
+                    pygame.display.flip()
+    
+                    for event in pygame.event.get() :
+                        if event.type == QUIT :
+                            a = False
+                            exit(0)
+                        if event.type == KEYDOWN :
+                            a = False
+                            exit(0)
+
             with open("level" + str(level) + ".txt", "r") as fichier:
                         structure_niveau = []
                         for ligne in fichier:
