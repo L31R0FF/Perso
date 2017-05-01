@@ -23,6 +23,7 @@ pygame.display.set_icon(perso)
 pygame.display.set_caption("BUBBLE")
 
 reponse = ""
+pygame.key.set_repeat(400, 100)
 
 while reponse != "5" :
     fenetre.blit(start, (0, 0))
