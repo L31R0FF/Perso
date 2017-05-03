@@ -10,6 +10,7 @@ fenetre = pygame.display.set_mode((800, 600))
 wall = pygame.image.load("pics/wall.png").convert() 
 floor = pygame.image.load("pics/floor.png").convert()
 spike = pygame.image.load("pics/spike.png").convert()
+spike2 = pygame.image.load("pics/spike2.png").convert()
 chest = pygame.image.load("pics/chest.png").convert()
 perso = pygame.image.load("pics/hero.png").convert()
 
@@ -169,6 +170,9 @@ while reponse != "5" :
                     elif lettre == "-" :
                         fenetre.blit(wall, (ix, iy))
 
+                    elif lettre == "V" :
+                        fenetre.blit(spike2, (ix, iy))
+
                     elif lettre == "A" :
                         fenetre.blit(spike, (ix, iy))
 
@@ -241,6 +245,9 @@ while reponse != "5" :
                                     elif lettre == "-" :
                                         fenetre.blit(wall, (ix, iy))
 
+                                    elif lettre == "V" :
+                                        fenetre.blit(spike2, (ix, iy))
+
                                     elif lettre == "A" :
                                         fenetre.blit(spike, (ix, iy))
 
@@ -289,6 +296,10 @@ while reponse != "5" :
                                     elif lettre == "-" :
                                         fenetre.blit(wall, (ix, iy))
 
+                                    elif lettre == "V" :
+                                        fenetre.blit(spike2, (ix, iy))
+
+
                                     elif lettre == "A" :
                                         fenetre.blit(spike, (ix, iy))
 
@@ -335,6 +346,9 @@ while reponse != "5" :
 
                                     elif lettre == "-" :
                                         fenetre.blit(wall, (ix, iy))
+
+                                    elif lettre == "V" :
+                                        fenetre.blit(spike2, (ix, iy))
 
                                     elif lettre == "A" :
                                         fenetre.blit(spike, (ix, iy))
@@ -384,6 +398,9 @@ while reponse != "5" :
                                     elif lettre == "-" :
                                         fenetre.blit(wall, (ix, iy))
 
+                                    elif lettre == "V" :
+                                        fenetre.blit(spike2, (ix, iy))
+
                                     elif lettre == "A" :
                                         fenetre.blit(spike, (ix, iy))
     
@@ -430,6 +447,9 @@ while reponse != "5" :
 
                                     elif lettre == "-" :
                                         fenetre.blit(wall, (ix, iy))
+
+                                    elif lettre == "V" :
+                                        fenetre.blit(spike2, (ix, iy))
 
                                     elif lettre == "A" :
                                         fenetre.blit(spike, (ix, iy))
@@ -507,6 +527,9 @@ while reponse != "5" :
                                 elif lettre == "-" :
                                     fenetre.blit(wall, (ix, iy))
 
+                                elif lettre == "V" :
+                                        fenetre.blit(spike2, (ix, iy))
+
                                 elif lettre == "A" :
                                     fenetre.blit(spike, (ix, iy))
 
@@ -534,6 +557,9 @@ while reponse != "5" :
 
                         elif lettre == "-" :
                             fenetre.blit(wall, (ix, iy))
+
+                        elif lettre == "V" :
+                            fenetre.blit(spike2, (ix, iy))
 
                         elif lettre == "A" :
                             fenetre.blit(spike, (ix, iy))
