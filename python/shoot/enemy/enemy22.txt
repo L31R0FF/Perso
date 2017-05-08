@@ -1,0 +1,6 @@
+330
+382
+[["pics/nazid3.png", 330, 382],["pics/nazid2.png", 360, 382],["pics/nazid3.png", 390, 382],["pics/nazid2.png", 420, 382],["pics/nazid3.png", 450, 382],['pics/nazi3.png', 420, 382], ['pics/nazi2.png', 390, 382], ['pics/nazi3.png', 360, 382], ['pics/nazi2.png', 330, 382]]
+["pics/nazidead1.png", "pics/nazidead2.png", "pics/nazidead3.png", "pics/nazidead4.png", "pics/nazidead5.png"]
+sound/screaming.ogg
+100

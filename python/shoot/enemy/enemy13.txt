@@ -1,0 +1,6 @@
+200
+200
+[["pics/terroristl.png", 384, 119],["pics/terroristl2.png", 364, 119],["pics/terroristl.png", 344, 119],["pics/terroristl2.png", 324, 119],["pics/terroristl.png", 304, 119], ['pics/terrorist2.png', 324, 119], ['pics/terrorist.png', 344, 119], ['pics/terrorist2.png', 364, 119], ['pics/terrorist.png', 384, 119]]
+["pics/terrdead1.png", "pics/terrdead2.png", "pics/terrdead3.png", "pics/terrdead4.png", "pics/terrdead5.png"]
+sound/screaming.ogg
+100
