@@ -7,7 +7,7 @@ void loop() {
  char c;
  while (Serial.available()) {
   c = Serial.read();
-  Serial.println(c);
+  Serial.print(c);
   // 131 octave 1
   if (c == 'a') {
    tone(8, 131, 250);
@@ -123,6 +123,9 @@ void loop() {
   }
   if (c == '-') {
    delay(250);
+  }
+  if (c == '$') {
+    Serial.println();
   }
  }
 }
