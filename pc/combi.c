@@ -1,8 +1,8 @@
 #include "stdio.h"
-#define LISTNB 3
+#define LISTNB 26
 
 int main(int argc, char *argv[]) {
-  char list[LISTNB] = {'A','B','C'};
+  char list[LISTNB] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
   int i, i2, i3;
   
   for (i = 0; i < LISTNB; i++) {
